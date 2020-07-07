@@ -6,6 +6,7 @@ import org.springframework.security.config.annotation.authentication.builders.Au
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 @EnableWebSecurity
 @Configuration
@@ -34,8 +35,16 @@ public class LssSecurityConfig extends WebSecurityConfigurerAdapter {
         .and()
         .formLogin().
             loginPage("/login").permitAll().
-            loginProcessingUrl("/doLogin")
-            
+            loginProcessingUrl("/doLogin") 
+        .and()
+        	.logout().permitAll().logoutUrl("/logout") 
+        	.logoutRequestMatcher(new AntPathRequestMatcher("/logout","GET"))//for .csrf().disable() by default it' mean
+            .clearAuthentication(true)
+            .invalidateHttpSession(true)
+            .deleteCookies("JSESSIONID","remember-me")
+            .logoutSuccessUrl("/login")
+        	
+        	
         .and()
         .csrf().disable()
         ;

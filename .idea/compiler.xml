@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="learn-spring-security-m1-l1" />
+        <module name="learn-spring-security-m1-l2" />
+        <module name="learn-spring-security-m1-l3" />
+        <module name="learn-spring-security-m1-l4" />
+        <module name="learn-spring-security-m1-l5" />
+        <module name="learn-spring-security-m1-l6" />
+        <module name="learn-spring-security-m1-l6-noboot" />
+        <module name="learn-spring-security-m1-l7" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="learn-spring-security" target="1.5" />
+      <module name="learn-spring-security-m1-l1" target="1.8" />
+      <module name="learn-spring-security-m1-l2" target="1.8" />
+      <module name="learn-spring-security-m1-l3" target="1.8" />
+      <module name="learn-spring-security-m1-l4" target="1.8" />
+      <module name="learn-spring-security-m1-l5" target="1.8" />
+      <module name="learn-spring-security-m1-l6" target="1.8" />
+      <module name="learn-spring-security-m1-l6-noboot" target="1.8" />
+      <module name="learn-spring-security-m1-l7" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

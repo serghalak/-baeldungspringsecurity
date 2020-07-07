@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Built-By: Serg
+Build-Jdk: 11.0.7
+Implementation-Title: learn-spring-security
+Implementation-Version: 0.1.0-SNAPSHOT
+Implementation-Vendor-Id: com.baeldung.m1
+Implementation-Vendor: Pivotal Software, Inc.
+Implementation-URL: http://projects.spring.io/spring-boot/learn-spring-s
+ ecurity-m1-l6/
+Created-By: Maven Integration for Eclipse
+
